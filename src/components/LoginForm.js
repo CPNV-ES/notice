@@ -18,8 +18,8 @@ function LoginForm() {
                 </p>
             </div>
             <Form action="#" method="post">
-                <Input name="email" className="first" type="email" />
-                <Input name="password" className="last mb-4" type="password" />
+                <Input name="email" type="email" />
+                <Input name="password" className="mb-4" type="password" />
                 <div class="d-flex mb-5 align-items-center">
                     <Checkbox text="Remember me" checked />
                     <span class="ml-auto">
