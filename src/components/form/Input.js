@@ -17,7 +17,6 @@ export default function Input({
         >
             <label htmlFor={name}>{name}</label>
             <FormControl
-                defaultValue={value}
                 value={value}
                 type={type}
                 id={name}

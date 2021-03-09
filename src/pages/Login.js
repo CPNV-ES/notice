@@ -5,7 +5,7 @@ import "./Login.css";
 
 function Login() {
     return (
-        <div class="content">
+        <div className="content">
             <Container className="px-4">
                 <Row className="justify-content-center">
                     <Col md={6} className="col-md-6 contents">
