@@ -4,8 +4,12 @@ import { Link } from "react-router-dom";
 import "./LoginForm.css";
 import Input from "./form/Input";
 import Checkbox from "./form/Checkbox";
+import { useState } from "react";
 
 function LoginForm() {
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+
     return (
         <div class="form-block">
             <div class="mb-4">
@@ -18,8 +22,8 @@ function LoginForm() {
                 </p>
             </div>
             <Form action="#" method="post">
-                <Input name="email" type="email" />
-                <Input name="password" className="mb-4" type="password" />
+                <Input name="email" type="email" value={email} onChange={(e) => setEmail(e.target.value)}/>
+                <Input name="password" className="mb-4" type="password" value={password} onChange={(e) => setPassword(e.target.value)}/>
                 <div class="d-flex mb-5 align-items-center">
                     <Checkbox text="Remember me" checked />
                     <span class="ml-auto">
@@ -34,6 +38,7 @@ function LoginForm() {
                     className="badge-pill py-3 text-white"
                     variant="primary"
                     block
+                    disabled={email =="" || password =="" }
                 >
                     Log In
                 </Button>
