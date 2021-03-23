@@ -1,3 +1,5 @@
+[![CI-CD](https://github.com/CPNV-ES/notice/actions/workflows/s3-deploy.yml/badge.svg)](https://github.com/CPNV-ES/notice/actions/workflows/s3-deploy.yml)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
