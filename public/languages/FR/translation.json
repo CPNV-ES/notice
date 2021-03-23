@@ -1,0 +1,14 @@
+{
+    "input": {
+        "email": "email",
+        "password": "mot de passe"
+    },
+    "loginForm": {
+        "title": "S'identifier à ",
+        "label": "",
+        "link": "Mot de passe oublier",
+        "button": "Se connecter",
+        "span": "ou s'identifier' avec"
+    },
+    "checkbox": "Se souvenir de moi"
+}
