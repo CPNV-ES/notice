@@ -23,7 +23,7 @@ function LoginForm() {
             </div>
             <Form action="#" method="post">
                 <Input name="email" type="email" value={email} onChange={(e) => setEmail(e.target.value)}/>
-                <Input name="password" className="mb-4" value={password} onChange={(e) => setPassword(e.target.value)}/>
+                <Input name="password" className="mb-4" type="password" value={password} onChange={(e) => setPassword(e.target.value)}/>
                 <div className="d-flex mb-5 align-items-center">
                     <Checkbox text="Remember me" checked />
                     <span className="ml-auto">
