@@ -1,3 +1,4 @@
+import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import Login from './pages/Login';
@@ -9,12 +10,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 function App() {
-
   return (
     <Router>
-        <Switch>
-          <Route path="/" component={Login} exact/>
-        </Switch>
+      <Switch>
+        <Route path="/" component={Login} exact />
+      </Switch>
     </Router>
   );
 }
