@@ -6,7 +6,9 @@ import Input from "./form/Input";
 import Checkbox from "./form/Checkbox";
 import { useState } from "react";
 
-function LoginForm() {
+import { withNamespaces } from 'react-i18next';
+
+function LoginForm({t}) {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
@@ -14,11 +16,10 @@ function LoginForm() {
         <div className="form-block">
             <div className="mb-4">
                 <h3>
-                    Sign In to <strong>Notice</strong>
+                    {t('loginForm.title')} <strong>Notice</strong>
                 </h3>
                 <p className="mb-4">
-                    Lorem ipsum dolor sit amet elit. Sapiente sit aut eos
-                    consectetur adipisicing.
+                    {t('loginForm.label')}
                 </p>
             </div>
             <Form action="#" method="post">
@@ -28,7 +29,7 @@ function LoginForm() {
                     <Checkbox text="Remember me" checked />
                     <span className="ml-auto">
                         <Link to="#" className="forgot-pass">
-                            Forgot Password
+                            {t('loginForm.link')}
                         </Link>
                     </span>
                 </div>
@@ -40,12 +41,12 @@ function LoginForm() {
                     block
                     disabled={email =="" || password =="" }
                 >
-                    Log In
+                   {t('loginForm.button')}
                 </Button>
 
                 <span className="d-block text-center my-4 text-muted">
                     {" "}
-                    or sign in with
+                    {t('loginForm.span')}
                 </span>
 
                 <div className="social-login text-center">
@@ -64,4 +65,4 @@ function LoginForm() {
     );
 }
 
-export default LoginForm;
+export default withNamespaces()(LoginForm);
